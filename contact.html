@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: arial,sans-serif;
+            margin:0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        .contact{
+            max-width: 400px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        #contact{
+            text-align: center;
+        }
+        h2{
+            margin-bottom: 20px;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        input,textarea{
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+        }
+        button{
+            padding: 10px 20px;
+            background-color: #337ab7;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: #23527c;
+        }
+        @media (max-width:768px) {
+            .contact{
+                margin: 20px auto;
+            }
+        }
+        @media (max-width:480px){
+            .contact{
+                margin: 10px auto;
+            }
+            input, textarea{
+                padding: 5px;
+            }
+        }
+        button{
+            transition: background-color 0.2s ease-in-out;
+        }
+        button:hover{
+            transform: scale(1.1);
+        }
+        .top{
+    background-color: #333;
+    color: #ffffff;
+    padding: 1em;
+    text-align: center;
+    border: 5px solid aquamarine;
+    box-shadow: 0px 0px 100px rgb(0, 0, 0);
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+nav a{
+    color: aqua;
+    text-decoration: none;
+    box-shadow: 0px 0px 20px rgb(0, 238, 299);
+}
+
+    </style>
+</head>
+<body>
+    <header class="top">
+        <nav>
+            <ul>
+                <li><a href="./PORTFOLIO.HTML">home</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <div class="contact">
+        <section id="contact">
+            <h2>contact us</h2>
+            <form>
+                <input type="text" placeholder="name">
+                <input type="email" placeholder="email">
+                <textarea placeholder="message"></textarea>
+                <button>send</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
